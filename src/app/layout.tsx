@@ -4,8 +4,12 @@ import { Providers } from "@/app/providers";
 import { MainShell } from "@/components/layout/MainShell";
 
 export const metadata: Metadata = {
-  title: "Capability Intelligence Engine",
-  description: "SAM.gov opportunities matched to SBIR-funded innovators.",
+  title: {
+    default: "Provenance",
+    template: "%s · Provenance",
+  },
+  description:
+    "Provenance — government procurement intelligence connecting SAM.gov opportunities to SBIR-backed innovators.",
 };
 
 export default function RootLayout({
